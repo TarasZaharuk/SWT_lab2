@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Партнери — КМПС НТУ «ХПІ»</title>
+  <meta name="description" content="Індустріальні партнери кафедри комп'ютерного моделювання процесів і систем НТУ «ХПІ».">
+  <link rel="icon" href="../images/logo.png" type="image/png+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <img src="../images/logo.png" alt="Емблема кафедри КМПС НТУ «ХПІ»">
+        <span>
+          <strong>КМПС</strong>
+          <small>НТУ «ХПІ»</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про кафедру</a></li>
+          <li><a href="partners.html" aria-current="page">Партнери</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <p class="eyebrow">Співпраця</p>
+        <h1>Партнери інституту</h1>
+        <p>
+          Кафедра співпрацює з провідними <strong>IT-компаніями регіону</strong>, які надають
+          студентам бази для практики, менторів та запрошують випускників на <em>стажування</em>.
+        </p>
+
+        <ul class="partners-grid">
+          <li class="partner-card">
+            <img src="../images/partner-devstudio.png" alt="Логотип компанії DevStudio">
+            <h3>DevStudio</h3>
+            <p>Аутсорсингова веб-студія, партнер кафедри з практики для студентів 3–4 курсів.</p>
+            <a href="https://example.com/devstudio" target="_blank">Перейти на сайт</a>
+          </li>
+
+          <li class="partner-card">
+            <img src="../images/partner-cloudnet.png" alt="Логотип компанії CloudNet">
+            <h3>CloudNet</h3>
+            <p>Провайдер хмарних рішень, що проводить спільні лабораторні з курсу хмарних технологій.</p>
+            <a href="https://example.com/cloudnet" target="_blank">Перейти на сайт</a>
+          </li>
+
+          <li class="partner-card">
+            <img src="../images/partner-databyte.png" alt="Логотип компанії DataByte">
+            <h3>DataByte</h3>
+            <p>Компанія з аналізу даних, що пропонує теми дипломних робіт та оплачувані стажування.</p>
+            <a href="https://example.com/databyte" target="_blank">Перейти на сайт</a>
+          </li>
+        </ul>
+
+        <h2>Відгук партнера</h2>
+        <blockquote>
+          Студенти кафедри КМПС регулярно проходять у нас практику й демонструють впевнені
+          навички роботи з сучасним стеком веб-розробки.
+          <cite>Керівник відділу розробки, DevStudio</cite>
+        </blockquote>
+
+        <h2>Інтеграція з партнерськими сервісами</h2>
+        <p>
+          Для відображення статусу відкритих вакансій партнерів на сторінці використовується
+          невеликий фрагмент коду, який партнер вставляє у свою систему набору:
+        </p>
+        <p>
+          Виклик відбувається через тег <code>&lt;script&gt;</code> з підключенням
+          публічного API кафедри.
+        </p>
+        <pre><code>fetch("https://api.kmps.hpi.edu.ua/vacancies")
+  .then(response =&gt; response.json())
+  .then(data =&gt; console.log(data));</code></pre>
+
+        <h2>Контакти відділу співпраці</h2>
+        <address>
+          <strong>Кафедра КМПС, НТУ «ХПІ»</strong><br>
+          вул. Кирпичова, 2, м. Харків, 61002, Україна<br>
+          Email: <a href="mailto:partners@hpi.edu.ua">partners@hpi.edu.ua</a><br>
+          Телефон: <a href="tel:+380571234567">+380 (57) 123-45-67</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Кафедра КМПС</h4>
+          <p>Національний технічний університет «Харківський політехнічний інститут».</p>
+        </div>
+
+        <div>
+          <h4>Навігація</h4>
+          <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="about.html">Про кафедру</a></li>
+            <li><a href="partners.html">Партнери</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакти</h4>
+          <ul>
+            <li><a href="mailto:kmps@hpi.edu.ua">kmps@hpi.edu.ua</a></li>
+            <li><a href="tel:+380571234567">+380 (57) 123-45-67</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Кафедра КМПС, НТУ «ХПІ»</span>
+        <span>Навчальний проєкт — лабораторна робота №2</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Матриця компетенцій — КМПС НТУ «ХПІ»</title>
+  <meta name="description" content="Матриця компетенцій співробітників кафедри комп'ютерного моделювання процесів і систем НТУ «ХПІ».">
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <img src="../images/logo.png" alt="Емблема кафедри КМПС НТУ «ХПІ»">
+        <span>
+          <strong>КМПС</strong>
+          <small>НТУ «ХПІ»</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про кафедру</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="partners.html">Партнери</a></li>
+          <li><a href="code.html">Код</a></li>
+          <li><a href="calendar.html">Календар</a></li>
+          <li><a href="skills-matrix.html" aria-current="page">Компетенції</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <p class="eyebrow">Кадровий облік</p>
+        <h1>Матриця компетенцій відділу</h1>
+        <p>
+          Таблиця демонструє рівень володіння технологіями серед співробітників відділу
+          розробки. Шапка має три рівні заголовків (<code>&lt;th&gt;</code> з
+          <code>colspan</code> та <code>rowspan</code>): напрямок → технологія → рівень
+          володіння. Співробітники в першому стовпці згруповані по посадах за допомогою
+          <code>rowspan</code>.
+        </p>
+
+        <table class="matrix-table">
+          <caption>Матриця компетенцій відділу розробки</caption>
+          <thead>
+            <tr>
+              <th rowspan="3">Співробітник</th>
+              <th colspan="4">Backend</th>
+              <th colspan="2">Frontend</th>
+            </tr>
+            <tr>
+              <th colspan="2">C# / .NET</th>
+              <th colspan="2">Бази даних</th>
+              <th colspan="2">JavaScript</th>
+            </tr>
+            <tr>
+              <th>ASP.NET Core</th>
+              <th>Entity Framework</th>
+              <th>SQL Server</th>
+              <th>PostgreSQL</th>
+              <th>React</th>
+              <th>TypeScript</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="2">Senior розробники</th>
+              <th scope="row">Захарук Т. В.</th>
+              <td>Високий</td>
+              <td>Високий</td>
+              <td>Середній</td>
+              <td>Базовий</td>
+              <td>Середній</td>
+              <td>Середній</td>
+            </tr>
+            <tr>
+              <th scope="row">Єрошенко І. М.</th>
+              <td>Високий</td>
+              <td>Середній</td>
+              <td>Високий</td>
+              <td>Середній</td>
+              <td>Базовий</td>
+              <td>Базовий</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="2">Middle розробники</th>
+              <th scope="row">Коваленко О. П.</th>
+              <td>Середній</td>
+              <td>Середній</td>
+              <td>Середній</td>
+              <td>Базовий</td>
+              <td>Високий</td>
+              <td>Середній</td>
+            </tr>
+            <tr>
+              <th scope="row">Гриценко А. С.</th>
+              <td>Середній</td>
+              <td>Базовий</td>
+              <td>Базовий</td>
+              <td>—</td>
+              <td>Середній</td>
+              <td>Високий</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup">Junior розробники</th>
+              <th scope="row">Литвин М. В.</th>
+              <td>Базовий</td>
+              <td>Базовий</td>
+              <td>Базовий</td>
+              <td>—</td>
+              <td>Базовий</td>
+              <td>Базовий</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Кафедра КМПС</h4>
+          <p>Національний технічний університет «Харківський політехнічний інститут».</p>
+        </div>
+
+        <div>
+          <h4>Навігація</h4>
+          <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="about.html">Про кафедру</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="partners.html">Партнери</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакти</h4>
+          <address>
+            <ul>
+              <li><a href="mailto:kmps@hpi.edu.ua">kmps@hpi.edu.ua</a></li>
+              <li><a href="tel:+380571234567">+380 (57) 123-45-67</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Кафедра КМПС, НТУ «ХПІ»</span>
+        <span>Навчальний проєкт — лабораторна робота №4</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

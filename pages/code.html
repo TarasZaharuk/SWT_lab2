@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приклади коду — КМПС НТУ «ХПІ»</title>
+  <meta name="description" content="Приклади програмного коду та семантичних тегів кафедри комп'ютерного моделювання процесів і систем НТУ «ХПІ».">
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <img src="../images/logo.png" alt="Емблема кафедри КМПС НТУ «ХПІ»">
+        <span>
+          <strong>КМПС</strong>
+          <small>НТУ «ХПІ»</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="pages/about.html">Про кафедру</a></li>
+          <li><a href="pages/blog.html">Блог</a></li>
+          <li><a href="pages/partners.html">Партнери</a></li>
+          <li><a href="pages/code.html" aria-current="page">Код</a></li>
+          <li><a href="pages/contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <p class="eyebrow">Технічні матеріали</p>
+        <h1>Приклади програмного коду</h1>
+        <p>
+          На цій сторінці зібрано фрагменти коду, що використовуються в навчальних
+          проєктах кафедри. Кожен приклад оформлено з дотриманням семантичної
+          розмітки: блок коду — тегом <code>&lt;pre&gt;</code>, сам код — тегом
+          <code>&lt;code&gt;</code>, а змінні та параметри — тегом <code>&lt;var&gt;</code>.
+        </p>
+
+        <article>
+          <h2>Функція обчислення суми масиву (JavaScript)</h2>
+          <p>
+            Функція приймає масив <var>numbers</var> і повертає суму всіх його елементів.
+          </p>
+          <pre><code>function sumArray(<var>numbers</var>) {
+  let <var>total</var> = 0;
+
+  for (let <var>i</var> = 0; <var>i</var> &lt; <var>numbers</var>.length; <var>i</var>++) {
+    <var>total</var> += <var>numbers</var>[<var>i</var>];
+  }
+
+  return <var>total</var>;
+}</code></pre>
+        </article>
+
+        <article>
+          <h2>Запит даних через Fetch API</h2>
+          <p>
+            Приклад асинхронного запиту до сервера за адресою <var>url</var>
+            із наступною обробкою отриманих даних <var>data</var>.
+          </p>
+          <pre><code>async function loadData(<var>url</var>) {
+  const <var>response</var> = await fetch(<var>url</var>);
+  const <var>data</var> = await <var>response</var>.json();
+
+  console.log(<var>data</var>);
+  return <var>data</var>;
+}</code></pre>
+        </article>
+
+        <article>
+          <h2>Стиль кнопки (CSS)</h2>
+          <p>
+            Налаштування кольору фону <var>--gold</var> та відступів для елемента
+            <code>.btn-primary</code>.
+          </p>
+          <pre><code>.btn-primary {
+  background: var(<var>--gold</var>);
+  color: var(<var>--navy-deep</var>);
+  padding: 0.75rem 1.4rem;
+  border-radius: 2px;
+}</code></pre>
+        </article>
+
+        <article>
+          <h2>Виведення даних у консоль (інлайн-код)</h2>
+          <p>
+            Для швидкого виведення значення змінної <var>result</var> у консоль браузера
+            використовується метод <code>console.log()</code>.
+          </p>
+          <pre><code>console.log(<var>result</var>);</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="semantic-tags-heading" style="border-top: 1px solid var(--line);">
+      <div class="container">
+        <p class="eyebrow">Додаткові семантичні теги</p>
+        <h2 id="semantic-tags-heading">П'ять тегів, не розглянутих у прикладах</h2>
+        <p>
+          Нижче наведено короткий опис і робочий приклад для кожного з п'яти семантичних
+          тегів: <code>&lt;mark&gt;</code>, <code>&lt;output&gt;</code>, <code>&lt;progress&gt;</code>,
+          <code>&lt;meter&gt;</code> та <code>&lt;wbr&gt;</code>.
+        </p>
+
+        <article>
+          <h3><code>&lt;mark&gt;</code> — виділення релевантного фрагмента</h3>
+          <p>
+            Застосовується для візуального виділення тексту, який є релевантним у певному
+            контексті, наприклад слова, знайденого в результатах пошуку.
+          </p>
+          <p>
+            Результат пошуку за запитом «семантика»: текст містить слово
+            <mark>семантика</mark> у другому абзаці статті.
+          </p>
+          <pre><code>&lt;p&gt;Текст містить слово &lt;mark&gt;семантика&lt;/mark&gt; у другому абзаці.&lt;/p&gt;</code></pre>
+        </article>
+
+        <article>
+          <h3><code>&lt;output&gt;</code> — результат обчислення</h3>
+          <p>
+            Використовується для відображення результату обчислення чи дії користувача,
+            наприклад суми, поверненої калькулятором.
+          </p>
+          <p>
+            5 + 7 = <output name="sumResult">12</output>
+          </p>
+          <pre><code>&lt;form oninput="sumResult.value = parseInt(a.value) + parseInt(b.value)"&gt;
+  &lt;input type="number" id="a" value="5"&gt; +
+  &lt;input type="number" id="b" value="7"&gt; =
+  &lt;output name="sumResult" for="a b"&gt;12&lt;/output&gt;
+&lt;/form&gt;</code></pre>
+        </article>
+
+        <article>
+          <h3><code>&lt;progress&gt;</code> — прогрес виконання задачі</h3>
+          <p>
+            Позначає прогрес виконання задачі, що змінюється в часі, наприклад хід
+            завантаження файлу.
+          </p>
+          <p>
+            Завантаження файлу: <progress value="70" max="100">70%</progress> 70%
+          </p>
+          <pre><code>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</code></pre>
+        </article>
+
+        <article>
+          <h3><code>&lt;meter&gt;</code> — скалярне значення в діапазоні</h3>
+          <p>
+            Відображає скалярне значення в межах відомого діапазону, наприклад рівень
+            заповненості диска чи рейтинг товару.
+          </p>
+          <p>
+            Заповненість диска: <meter value="0.65" min="0" max="1">65%</meter> 65%
+          </p>
+          <pre><code>&lt;meter value="0.65" min="0" max="1"&gt;65%&lt;/meter&gt;</code></pre>
+        </article>
+
+        <article>
+          <h3><code>&lt;wbr&gt;</code> — можливий розрив рядка</h3>
+          <p>
+            Вказує браузеру допустиме місце для перенесення довгого слова чи URL-адреси,
+            якщо воно не вміщується в рядок.
+          </p>
+          <p style="max-width: 220px; border: 1px dashed var(--line); padding: 0.5rem;">
+            Довге слово: Кафедракомп&#x2019;ютерного<wbr>моделюванняпроцесів<wbr>ісистем
+          </p>
+          <pre><code>Кафедракомп&amp;#x2019;ютерного&lt;wbr&gt;моделюванняпроцесів&lt;wbr&gt;ісистем</code></pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Кафедра КМПС</h4>
+          <p>Національний технічний університет «Харківський політехнічний інститут».</p>
+        </div>
+
+        <div>
+          <h4>Навігація</h4>
+          <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="pages/about.html">Про кафедру</a></li>
+            <li><a href="pages/blog.html">Блог</a></li>
+            <li><a href="pages/partners.html">Партнери</a></li>
+            <li><a href="pages/code.html">Код</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакти</h4>
+          <address>
+            <ul>
+              <li><a href="mailto:kmps@hpi.edu.ua">kmps@hpi.edu.ua</a></li>
+              <li><a href="tel:+380571234567">+380 (57) 123-45-67</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Кафедра КМПС, НТУ «ХПІ»</span>
+        <span>Навчальний проєкт — лабораторна робота №3</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

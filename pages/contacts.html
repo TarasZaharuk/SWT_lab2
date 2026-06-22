@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти — КМПС НТУ «ХПІ»</title>
+  <meta name="description" content="Контактна інформація та форма зворотного зв'язку кафедри комп'ютерного моделювання процесів і систем НТУ «ХПІ».">
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <img src="../images/logo.png" alt="Емблема кафедри КМПС НТУ «ХПІ»">
+        <span>
+          <strong>КМПС</strong>
+          <small>НТУ «ХПІ»</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="pages/about.html">Про кафедру</a></li>
+          <li><a href="pages/blog.html">Блог</a></li>
+          <li><a href="pages/partners.html">Партнери</a></li>
+          <li><a href="pages/contacts.html" aria-current="page">Контакти</a></li>
+          <li><a href="pages/code.html">Код</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <p class="eyebrow">Зв'язок з нами</p>
+        <h1>Контакти</h1>
+        <p>
+          Звертайтеся до кафедри з будь-яких питань щодо вступу, навчального процесу
+          або співпраці — ми відповімо протягом одного-двох робочих днів.
+        </p>
+
+        <h2>Місцезнаходження кафедри</h2>
+        <address>
+          <strong>Кафедра КМПС, НТУ «ХПІ»</strong><br>
+          вул. Кирпичова, 2, м. Харків, 61002, Україна<br>
+          Email: <a href="mailto:kmps@hpi.edu.ua">kmps@hpi.edu.ua</a><br>
+          Телефон: <a href="tel:+380571234567">+380 (57) 123-45-67</a>
+        </address>
+
+        <h2>Форма зворотного зв'язку</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name" required>
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="subject">Тема звернення:</label><br>
+            <input type="text" id="subject" name="subject">
+          </p>
+
+          <p>
+            <label for="message">Повідомлення:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+
+          <button type="submit" class="btn btn-primary">Надіслати</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Кафедра КМПС</h4>
+          <p>Національний технічний університет «Харківський політехнічний інститут».</p>
+        </div>
+
+        <div>
+          <h4>Навігація</h4>
+          <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="pages/about.html">Про кафедру</a></li>
+            <li><a href="pages/blog.html">Блог</a></li>
+            <li><a href="pages/partners.html">Партнери</a></li>
+            <li><a href="pages/contacts.html" aria-current="page">Контакти</a></li>
+            <li><a href="pages/code.html">Код</a></li>
+
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакти</h4>
+          <address>
+            <ul>
+              <li><a href="mailto:kmps@hpi.edu.ua">kmps@hpi.edu.ua</a></li>
+              <li><a href="tel:+380571234567">+380 (57) 123-45-67</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Кафедра КМПС, НТУ «ХПІ»</span>
+        <span>Навчальний проєкт — лабораторна робота №3</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

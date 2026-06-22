@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Календар — КМПС НТУ «ХПІ»</title>
+  <meta name="description" content="Календар поточного місяця кафедри комп'ютерного моделювання процесів і систем НТУ «ХПІ».">
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <img src="../images/logo.png" alt="Емблема кафедри КМПС НТУ «ХПІ»">
+        <span>
+          <strong>КМПС</strong>
+          <small>НТУ «ХПІ»</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про кафедру</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="partners.html">Партнери</a></li>
+          <li><a href="code.html">Код</a></li>
+          <li><a href="calendar.html" aria-current="page">Календар</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <p class="eyebrow">Розклад подій</p>
+        <h1>Календар кафедри</h1>
+        <p>
+          Календар поточного місяця з відображенням навчальних днів. Порожні комірки
+          на початку та в кінці місячної сітки об'єднані за допомогою <code>colspan</code>,
+          щоб візуально відокремити їх від робочих днів.
+        </p>
+
+        <table class="month-table">
+          <caption>Календар — червень 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Пн</th>
+              <th scope="col">Вт</th>
+              <th scope="col">Ср</th>
+              <th scope="col">Чт</th>
+              <th scope="col">Пт</th>
+              <th scope="col">Сб</th>
+              <th scope="col">Нд</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>30</td>
+              <td class="empty-days" colspan="5">Липень 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Кафедра КМПС</h4>
+          <p>Національний технічний університет «Харківський політехнічний інститут».</p>
+        </div>
+
+        <div>
+          <h4>Навігація</h4>
+          <ul>
+            <li><a href="../index.html">Головна</a></li>
+            <li><a href="about.html">Про кафедру</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="partners.html">Партнери</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакти</h4>
+          <address>
+            <ul>
+              <li><a href="mailto:kmps@hpi.edu.ua">kmps@hpi.edu.ua</a></li>
+              <li><a href="tel:+380571234567">+380 (57) 123-45-67</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Кафедра КМПС, НТУ «ХПІ»</span>
+        <span>Навчальний проєкт — лабораторна робота №4</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
